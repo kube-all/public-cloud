@@ -44,6 +44,7 @@ EOF
 }
 
 for gv in ${API_GROUP_VERSIONS}; do
+  echo  "rm -f ${SCRIPT_ROOT}/${gv}/types_swagger_doc_generated.go"
   rm -f "${SCRIPT_ROOT}/${gv}/types_swagger_doc_generated.go"
   kube::swagger::gen_types_swagger_doc "${gv}" "${gv}"
 done

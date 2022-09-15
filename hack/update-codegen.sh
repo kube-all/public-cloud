@@ -11,8 +11,8 @@ verify="${VERIFY:-}"
 
 for group in aliyun tencent; do
   ${CODEGEN_PKG}/generate-groups.sh "client,lister,informer" \
-    github.com/kube-all/client-go/${group} \
-    github.com/kube-all/api \
+    github.com/kube-all/public-cloud/client-go/${group} \
+    github.com/kube-all/public-cloud/api \
     "${group}:v1alpha1" \
     --go-header-file ${SCRIPT_ROOT}/hack/boilerplate.txt \
     ${verify}

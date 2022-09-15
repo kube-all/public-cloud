@@ -10,11 +10,11 @@ set -o nounset
 set -o pipefail
 
 API_GROUP_VERSIONS="\
-aliyun/v1alpha1 \
-tencent/v1alpha1 \
+api/aliyun/v1alpha1 \
+api/tencent/v1alpha1 \
 
 "
 API_PACKAGES="\
-github.com/kube-all/public-cloud/aliyun/v1alpha1,\
-github.com/kube-all/public-cloud/tencent/v1alpha1\
+github.com/kube-all/public-cloud/api/aliyun/v1alpha1,\
+github.com/kube-all/public-cloud/api/tencent/v1alpha1\
 "
